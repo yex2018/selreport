@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/selreport">
+        <file>images/logo.png</file>
+        <file>images/image01.png</file>
+        <file>images/image02.png</file>
+        <file>images/image03.png</file>
+        <file>images/cover.png</file>
+        <file>images/boy.png</file>
+        <file>images/girl.png</file>
+        <file>html/rpt_bess.html</file>
+        <file>html/rpt_ssis.html</file>
+        <file>data/report_data.ini</file>
+        <file>images/showqrcode.png</file>
+        <file>html/rpt_prq.html</file>
+    </qresource>
+</RCC>

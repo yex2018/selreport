@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <meta name="qrichtext" content="1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>QTextEdit Demonstration</title>
+        <style type="text/css">
+            #title{
+                margin-bottom:40px;
+                font-size:28px;
+                font-weight:bold;
+                color:#70ad47;
+                text-align:right;
+                vertical-align:middle;
+            }
+            #category{
+                margin-bottom:40px;
+                font-size:13px;
+                font-weight:bold;
+                text-align:center;
+                page-break-before:always;
+            }
+            #headline_1{
+                margin-bottom:20px;
+                font-size:14px;
+                font-weight:bold;
+                color:#70ad47;
+                page-break-before:always;
+            }
+            #headline_2{
+                margin-top:20px;
+                margin-bottom:20px;
+                font-size:13px;
+                font-weight:bold;
+                color:#70ad47;
+            }
+            #headline_3{
+                margin-top:20px;
+                margin-bottom:20px;
+                font-size:13px;
+                font-weight:bold;
+            }
+            #content{
+                margin-top:12px;
+                margin-bottom:12px;
+                font-size:11pt;
+                text-align:justify;
+                text-indent:22px;
+                line-height:30px;
+            }
+            #content_img_rfloat{
+                margin-top:12px;
+                margin-bottom:12px;
+                font-size:11pt;
+                text-align:justify;
+                text-indent:20px;
+                line-height:30px;
+            }
+            #content_img_rfloat img{
+                float:right;
+                margin-top:12px;
+                margin-bottom:12px;
+                margin-left:12px;
+            }
+            #content_noindent{
+                margin-top:12px;
+                margin-bottom:12px;
+                font-size:11pt;
+                text-align:justify;
+                line-height:30px;
+            }
+            #content_noindent li{
+                margin-bottom:6px
+            }
+        </style>
+    </head>
+    <body>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div id="title" align="right">亲子关系健康度报告</div>
+        <div id="title_1" align="right">— $version_age$</div>
+        <div id="content" align="right">$child_name$</div>
+        <div id="content" align="right">报告生成日期：$report_time$</div>
+        <div id="content" align="right">观察记录填写日期：$evaluation_time$</div>
+        <div id="content" align="right">报告ID：$report_id$</div>
+        <div id="category">报告目录</div>
+        <div id="content_noindent">1    报告基本信息 ........................................................................................................... 3</div>
+        <div id="content_noindent">2    报告结果概览 ........................................................................................................... 4</div>
+        <div id="content_noindent">3    详细报告  ................................................................................................................. 5</div>
+        <div id="content_noindent">4    专家建议  ................................................................................................................. 7</div>
+        <div id="content_noindent">5    报告阅读说明 ........................................................................................................... 8</div>
+        <div id="content_noindent">6    关于SEL  ................................................................................................................. 9</div>
+        <div id="content_noindent">7    关于薄荷叶教育&trade; .................................................................................................. 11</div>
+        <div id="content_noindent">8    本报告主要参考资料 .............................................................................................. 12</div>
+        <div id="headline_1">1 报告基本信息</div>
+        <div id="content_noindent" align="center"><img src="userdata://basic_info.png" width="550" height="327" ></div>
+        <div id="headline_1">2 报告结果概览</div>
+        <div id="content" align="justify">本报告基于大量研究结果，通过对影响亲子关系的$subdimen_num$个关键指标进行评估。报告结果显示，您与孩子的亲子关系健康指数下图所示：</div>
+        <div id="content_noindent" align="justify"><ul><li> 有$acceptable_subdimen_num$个指标处于<span style="color:#70ad47;">绿色</span>健康区$acceptable_subdimen_list$</li><li>有$caution_subdimen_num$个指标处于<span style="color:#ffc000;">黄色</span>注意区$caution_subdimen_list$</li><li>有$extremecaution_subdimen_num$个指标处于<span style="color:#c00000;">红色</span>警示区$extremecaution_subdimen_list$</li></ul></div>
+        <div id="content_noindent" align="center"><img src="userdata://slevel.png" width="620" height="429" ></div>
+        <div id="content" align="justify"><span style="font-size:9px;">（注：任何测量都会存在一定的误差，也就是说，通过当前工具测得的分值与真实水平可能存在一定的偏差。因此我们在提供报告得分（黑点位置）的基础上，还分别提供了准确度为90%的分数区间（蓝色区间）。也就是说，真实状况会有90%的可能性落于绿色区间范围内。）</span></div>
+        <div id="headline_1">3 详细测评报告</div>
+        <div id="content" align="justify">本报告中，您与孩子的亲子关系在以下$subdimen_num$个指标的结果如下：</div>
+        <div id="content_noindent" align="center"><img src="userdata://subdimen_table.png" width="620" height="$subdimen_table_height$" ></div>
+        <div id="content" style="page-break-before:always;" align="justify">与同年龄段儿童家庭的$user_gender$性家长相比，您与孩子的亲子关系健康指数在具体$subdimen_num$项指标中的百分位水平如下所示，这代表着您在100名同类家长中，在某个维度上高于多少个家长。比如，您在与孩子之间的心理依恋方面的健康度百分位水平为**%，那么说明在100名同年龄段孩子的$user_gender$性家长中，您与孩子的心理依恋水平超过了**名家长。您的育儿压力的百分位分数为**%，说明在100名同年龄段孩子的$user_gender$性家长中，您的育儿压力超过了**名家长。</div>
+        <div id="content_noindent" align="center"><img src="userdata://percent_gender.png" width="550" height="386" ></div>
+        <div id="headline_1">4 专家建议</div>
+        <div id="content" align="justify">原生家庭是儿童的幸福之源，健康的亲子关系是基础。因此，培养孩子的幸福感，需要先从建立健康的亲子关系开始。</div>
+        <div id="content" align="justify">本报告显示，$report_suggestion1$</div>
+        $report_suggestion2$
+        <div id="headline_1">5 报告阅读说明</div>
+        <div id="content" align="justify">亲子关系是儿童最早建立起来的人际关系。父母的品格，对子女的抚养、教育方式以及态度等，都在这种关系中直接对孩子的身心发展产生影响，也将影响儿童今后的人际交往关系。亲子关系是个体和社会生活中的重要部分，在幼儿期，几乎是儿童全部情感的依赖所在，因此，健康的亲子关系对孩子的一生都有着重要意义。</div>
+        <div id="content" align="justify">亲子关系是双向作用的。孩子在父母的抚养下成长，同时其身心发展又影响着父母的行为。孩子年幼时，由于心理、生理发育不成熟，经济生活不独立，必须依赖父母，父母对儿童的影响更深。父母的道德修养，处世态度及教育子女的方法都影响儿童身心的发育，以及儿童后来形成的人际关系。随儿童年龄的增长，父母与子女的关系不断地发展。如果父母能够基于儿童在不同时期的心理发展特点进行要求和关心，儿童对父母就会尊敬和体贴，关系向好的一方面发展；反之，粗暴的教育态度，则会使儿童对父母的态度产生敌意，导致关系紧张。</div>
+        <div id="content" align="justify">孩子成长的早期是亲子关系建立的关键时期，也是孩子社会性发展的重要阶段，建立良好的亲子关系，能够帮助孩子不仅和父母，同时也在未来能与老师、同学建立起良好的关系，对一个孩子建立信任感、认同感、适应能力都会有极大的好处。</div>
+        <div id="content" align="justify">薄荷叶亲子关系测评工具，建议每半年使用一次，以持续性了解亲子关系的健康度状况。最后，阅读本报告前，需要特别提醒的是，本报告结果基于观察者针对测评中的题目反馈而形成，深入理解需要与儿童及与家长之间的进一步探讨。</div>
+        <div id="headline_1">6 关于SEL</div>
+        <div id="content" align="justify">SEL（Social and Emotional Learning）的概念是由美国非赢利组织CASEL（The Collaborative for Academic, Social, and Emotional Learning）于1994年正式提出的。SEL指的是，儿童和成人通过学习知识、态度与技能，来理解和管理情感，设定和实现积极的目标，感受和表达对他人的同理心，建立和维护积极的关系，并做出负责任的决策（CASEL, 2017）。SEL认为，最好的学习发生在相互支持的关系中，这种关系让学习变得富有挑战、充满参与感和意义（Jones, Bouffard, & Weissbourd，2013）。</div>
+        <div id="content" align="justify">2002年，联合国教科文组织在全球140个国家实施推广SEL，由美国开始，还包括欧洲、南美洲、北美洲、东南亚地区、大洋洲等。</div>
+        <div id="content" align="justify">SEL社会情感能力，就像大树的根一样，给予孩子持续一生的成长动力。</div>
+        <div id="content_noindent" align="center"><img src=":/selreport/images/image02.png" width="425" height="546" ></div>
+        <div id="content" align="justify">SEL社会情感能力包含五种核心技能来启发儿童的心灵，帮助儿童内在健康成长，从而有能力驾驭自己的人生。这五种核心技能包括：</div>
+        <div id="content_noindent" align="center"><img src=":/selreport/images/image03.png" width="487" height="260" ></div>
+        <div id="content_noindent" align="justify"><ol style="font-weight:bold;"><li>自我意识（self-awareness）：<span style="font-weight:normal;">能够准确地识别自己的情绪和想法，并能了解自己的情绪和想法是如何对自己的行为产生影响的。</span></li><li>自我管理（self-management）：<span style="font-weight:normal;">能够在不同的情境下，有效的调节自己的情绪、想法和行为。</span></li><li>负责任的决策（Responsible decision-making）：<span style="font-weight:normal;">能够在综合考虑道德标准、安全性、社会规则、尊重他人以及不同行为造成的可能的结果的情况下做出建设性选择和决策。</span></li><li>关系技能（Relationship skills）：<span style="font-weight:normal;">能够与不同的个人和团体建立并保持健康有益的关系。</span></li><li>社会意识（Social awareness）：<span style="font-weight:normal;">能够在不同的背景和文化中，了解他人的视角，并理解他人。</span></li></ol></div>
+        <div id="content" align="justify">SEL社会情感能力，对于儿童全面健康发展有着极其重要的意义；欧美多年的研究及实践表明，儿童在SEL方面的发展和提升，对于儿童的性格塑造、品格培养、学业精进、能力提升都至关重要；尽早进行科学评测，及时并有针对性的培养和干预，将让孩子受益终生！</div>
+        <div id="headline_1">7 关于薄荷叶教育&trade;</div>
+        <div id="content" align="justify">薄荷叶教育——中国首家SEL专业测评机构，关注儿童内在成长，致力于社会情感能力专业评测，帮助儿童开启自我发现的成长之旅。</div>
+        <div id="content" align="justify">薄荷叶测评，由哥伦比亚大学与北京大学教育研究者们基于三十余年SEL研究成果以及在全球许多国家实施应用结果联合开发，采用基于常模的动态评测方法，客观评估儿童和青少年的SEL能力发展水平和问题行为风险等指标，帮助父母了解孩子社会情感方面的发展状况及在群体中的发展动态。</div>
+        <br/>
+        <div id="content" align="center">希望我们的孩子内心丰盈、生动而独特！</div>
+        <div id="content" align="center">让我们通过社会情感学习，与孩子一起，探索更好的自己 。</div>
+        <div id="content" align="center"><span style="font-weight:bold; color:#70ad47;">明亮之心，点亮生命！</span></div>
+        <div id="content" align="center"><span style="font-weight:bold; color:#70ad47;">Bright Heart, Lighten Life!</span></div>
+        <div id="content_noindent" align="center"><img src=":/selreport/images/logo.png" width="235" height="125" ></div>
+        <div id="headline_1">8 本报告主要参考资料</div>
+        <div id="content_noindent" align="justify"><ul><li><span style="font-weight:bold;">Handbook of Social and Emotional Learning Research and Practice</span>，Edited by Joseph A. Durlak, Celene E. Domitrovich, Roger P. Weissberg, and Thomas P. Gullotta, 2015</li><li>The Collaborative for Academic, Social and Emotional Learning <span style="font-weight:bold;">(CASEL)</span>, http://www.casel.org</li><li>Social and Emotional Aspects of Learning<span style="font-weight:bold;">(SEAL)</span>: Improving behaviour, improving learning. http://www.education.gov.uk</li><li>Social and Emotional Well-being <span style="font-weight:bold;">(SEWB)</span>, http://www.sewbmh.org.au/</li><li><span style="font-weight:bold;">Diagnostic and Statistical Manual Disorders</span>，5th ed, American Psychiatric Association (APA) 2013</li><li><span style="font-weight:bold;">儿童心理学</span>，（英）H. Rudolph Schaffer（H. 鲁道夫·谢弗）著，王莉 译</li><li><span style="font-weight:bold;">儿童的人格形成及其培养</span>，（奥地利）Alfred Adler（阿尔弗雷德·阿德勒）著，韦启昌 译</li></ul></div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div id="content" align="center">更多学习，请登陆<span style="font-weight:bold; font-size:13pt; color:#70ad47">薄荷叶SEL教育</span>公众号</div>
+        <div id="content_noindent" align="center"><img src=":/selreport/images/showqrcode.png" width="150" height="150" ></div>
+    </body>
+</html>
+

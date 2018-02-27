@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <meta name="qrichtext" content="1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>QTextEdit Demonstration</title>
+        <style type="text/css">
+            #title{
+                margin-bottom:40px;
+                font-size:28px;
+                font-weight:bold;
+                color:#70ad47;
+                text-align:right;
+                vertical-align:middle;
+            }
+            #category{
+                margin-bottom:40px;
+                font-size:13px;
+                font-weight:bold;
+                text-align:center;
+                page-break-before:always;
+            }
+            #headline_1{
+                margin-bottom:20px;
+                font-size:14px;
+                font-weight:bold;
+                color:#70ad47;
+                page-break-before:always;
+            }
+            #headline_2{
+                margin-top:20px;
+                margin-bottom:20px;
+                font-size:13px;
+                font-weight:bold;
+                color:#70ad47;
+            }
+            #headline_3{
+                margin-top:20px;
+                margin-bottom:20px;
+                font-size:13px;
+                font-weight:bold;
+            }
+            #content{
+                margin-top:12px;
+                margin-bottom:12px;
+                font-size:11pt;
+                text-align:justify;
+                text-indent:22px;
+                line-height:30px;
+            }
+            #content_img_rfloat{
+                margin-top:12px;
+                margin-bottom:12px;
+                font-size:11pt;
+                text-align:justify;
+                text-indent:20px;
+                line-height:30px;
+            }
+            #content_img_rfloat img{
+                float:right;
+                margin-top:12px;
+                margin-bottom:12px;
+                margin-left:12px;
+            }
+            #content_noindent{
+                margin-top:12px;
+                margin-bottom:12px;
+                font-size:11pt;
+                text-align:justify;
+                line-height:30px;
+            }
+            #content_noindent li{
+                margin-bottom:6px
+            }
+        </style>
+    </head>
+    <body>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div id="title" align="right">SEL社会技能发展水平报告</div>
+        <div id="content" align="right">$child_name$</div>
+        <div id="content" align="right">报告生成日期：$report_time$</div>
+        <div id="content" align="right">观察记录填写日期：$evaluation_time$</div>
+        <div id="content" align="right">报告ID：$report_id$</div>
+        <div id="category">报告目录</div>
+        <div id="content_noindent">1    报告基本信息 ........................................................................................................... 3</div>
+        <div id="content_noindent">2    报告结果概览 ........................................................................................................... 4</div>
+        <div id="content_noindent">3    详细测评报告 ........................................................................................................... 6</div>
+        <div id="content_noindent">    3.1    社会技能总体发展水平详细报告 ...................................................................... 6</div>
+        <div id="content_noindent">    3.2    社会技能细分子维度发展水平详细报告 ........................................................... 7</div>
+        <div id="content_noindent">4    专家建议  ................................................................................................................. 8</div>
+        <div id="content_noindent">5    报告阅读说明 ........................................................................................................... 9</div>
+        <div id="content_noindent">6    关于SEL  ................................................................................................................. 11</div>
+        <div id="content_noindent">7    关于薄荷叶教育&trade; .................................................................................................. 13</div>
+        <div id="content_noindent">8    本报告主要参考资料 .............................................................................................. 14</div>
+        <div id="headline_1">1 报告基本信息</div>
+        <div id="content_noindent" align="center"><img src="userdata://basic_info.png" width="550" height="327" ></div>
+        <div id="headline_1">2 报告结果概览</div>
+        <div id="content" align="justify">$child_name$的社会技能得分为$total_rscore$，这意味着，与同龄儿童相比，$child_name$在社会技能方面的总体水平为$total_level$。<span style="font-size:9px;">（注：以 Social Skills Improvement System 中的近万名儿童为数据常模进行对比。）</span></div>
+        <div id="content_noindent" align="center"><img src="userdata://slevel.png" width="300" height="300" ></div>
+        <div id="content" align="justify">在本报告中，社会技能共包含七个细分维度，分别为：沟通能力（Communication）、合作性（Cooperation）、坚定自信（Assertion）、责任感（Responsibility）、同理心（Empathy）、社交参与（Engagement）、自控力（Self-control）。这七个细分维度，通过与中国及美国近万名儿童的常模数据进行对比，可划分为三种行为水平，即高于平均水平，平均水平、低于平均水平。低于平均水平的细分技能，说明可能需要您帮助或指导$child_himher$在这方面进行发展和提升。</div>
+        <div id="content" align="justify">$child_name$在上述七个细分维度中，与相同年龄段的儿童群体相比，</div>
+        <div id="content_noindent" align="justify"><ul><li>  有$aboveave_subdimen_num$个子维度高于平均水平$aboveave_subdimen_list$</li><li>  有$ave_subdimen_num$个子维度处于平均水平$ave_subdimen_list$</li><li>  有$belowave_subdimen_num$个子维度低于平均水平$belowave_subdimen_list$</li></ul></div>
+        <div id="content_noindent" align="center"><img src="userdata://subdimen_num.png" width="500" height="273" ></div>
+        <div id="content" align="justify">$child_name$在上述七个细分维度的得分，如下图所示：</div>
+        <div id="content_noindent" align="justify"><ul style="-qt-list-indent: 1;"><li>  得分最高的是$highest_subdimen$</li><li>  得分最低的是$lowest_subdimen$</li></ul></div>
+        <div id="content_noindent" align="center"><img src="userdata://subdimen_bar.png" width="550" height="381" ></div>
+        <div id="headline_1">3 详细报告</div>
+        <div id="headline_2">3.1 社会技能总体发展水平详细报告</div>
+        <div id="content" align="justify">$child_name$的社会技能总体得分为$total_rscore$。其社会技能分数区间如下图所示，这意味着，$child_name$的社会技能分数处于$total_rscore_68lower$-$total_rscore_68upper$的可能性为68%，处于$total_rscore_95lower$-$total_rscore_95upper$的可能性为95%。</div>
+        <div id="content_noindent" align="center"><img src="userdata://rscore_range.png" width="550" height="78" ></div>
+        <div id="content" align="justify"><span style="font-size:9px;">（注：任何测量都会存在一定的误差，也就是说，通过当前工具测得的SEL分值与儿童真实的SEL水平可能存在一定的偏差。因此我们在提供SEL得分（黑点位置）的基础上还分别提供准确度为68%分数区间（浅绿色区间）和准确度为95%的分数区间（深绿色区间）。这样，该儿童真实的SEL水平会有68%可能性落于浅绿色区间范围内，有95%的可能落于深绿色区间范围内。）</span></div>
+        <div id="content" align="justify">与该年龄段的儿童群体相比，$child_name$处于$total_percent_combined$%的位置，即该儿童的社会技能发展水平高于$total_percent_combined$%的同年龄段儿童。</div>
+        <div id="content_noindent" align="center"><img src="userdata://percent_combined.png" width="230" height="230" ></div>
+        <div id="content" align="justify">与该年龄段同性别的儿童群体相比，即与同年龄的$child_gender$童群体相比，$child_name$处于$total_percent_gender$%的位置，即该儿童的社会技能发展水平高于$total_percent_gender$%的$child_gender$童。</div>
+        <div id="content_noindent" align="center"><img src="userdata://percent_gender.png" width="230" height="230" ></div>
+        <div id="headline_2">3.2 社会技能细分子维度发展水平详细报告</div>
+        <div id="content" align="justify">在本报告中，社会技能共包含七个细分维度，分别为：沟通能力（Communication）、合作性（Cooperation）、坚定自信（Assertion）、责任感（Responsibility）、同理心（Empathy）、社交参与（Engagement）、自控力（Self-control）。</div>
+        <div id="content" align="justify">$child_name$在社会技能的七个细分维度的报告得分及发展水平如下表所示。</div>
+        <div id="content_noindent" align="center"><img src="userdata://subdimen_table.png" width="550" height="426" ></div>
+        <div id="headline_1">4 专家建议</div>
+        <div id="content" align="justify">$child_name$在社会技能方面的整体发展状况$total_level_conclusion1$</div>
+        <div id="content" align="justify">帮助孩子成为最好的自己，需要进一步深入了解，既要知道孩子的优势，也要了解孩子的相对短板。</div>
+        $total_level_conclusion2$
+        <div id="headline_1">5 报告阅读说明</div>
+        <div id="content" align="justify">2017年，美国CASEL、伊利诺伊大学、英属哥伦比亚大学的一项研究报告指出，社会情感学习（Social Emotional Learning, SEL）对于改善儿童的心理健康和学业成就有着重要的积极影响。该研究分析了82项涉及到全球10万名儿童及青少年的研究，结果显示，专门学习了SEL的儿童及青少年，在许多指标上比同龄人做得更好，有着更为积极的社会行为和态度，比如同理心、团队精神和学业成就等。他们的行为方面的问题更少，精神上的痛苦更少，药物使用也更少。<span style="font-size:9px;">（参见 CASEL． SEL Impact http://www.casel.org/ 2017）</span></div>
+        <div id="content" align="justify">2015年发表在《美国公共卫生杂志》(the American Journal of Public Health)上的一项研究发现，在幼儿园的SEL技能与年轻人在教育、就业、犯罪活动、物质使用和心理健康等方面的关键结果之间存在统计上的显著关联。</div>
+        <div id="content" align="justify">根据2011年对213项涉及全球27万多名学生的元分析（Meta-analysis），实证结果发现，那些参与SEL学习的学生在学业成绩上比没有参与SEL学习的学生高出11个百分点。与没有参加SEL课程的学生相比，参加SEL课程的学生也表现出了更好的课堂行为，管理压力和抑郁的能力更强，对自己、他人和学校的态度更为积极。</div>
+        <div id="content_img_rfloat" align="justify"><img src=":/selreport/images/image01.png" width="206" height="200" >众多研究结果表明，社会技能（Social Skills）是学业的助推器。如右图所示，社交技能对协调儿童在阅读和数学发展方面有着重要作用，直接影响到学习动机，反过来也对参与技能和学习能力有着影响。具有社交技能的学生会花更多时间完成任务并帮助他人。这使得他们的学习时间有所增加，课堂行为问题减少，从而促进其获得更好的学习成绩。</div>
+        <div id="content" align="justify">本报告是对儿童社会技能发展水平的描述。社会技能是指被社会情境接受的，并且可学习行为，比如，主动分享，帮助他人，建立关系，控制情绪等，这些都是在社会交往中普遍被重视的行为，通过这些行为，促进人与人之间积极的互动。报告的使用目的是帮助儿童更好的发展，而非对儿童能力的定性评估。尽管很少有孩子在所有的时间里都表现出很高的社会技能，但通过科学的方法，我们可以更加清晰的了解孩子在社会技能方面的发展水平，以及如何帮助孩子更好的发展其社会技能。</div>
+        <div id="content" align="justify">本报告中的社会技能量表包含了一系列的亲社会行为（Prosocial Behaviors），以美国知名国际性组织CASEL的SEL框架为基础，采用美国研究并实践了二十余年的SEL测评量表，以美国及中国近万名儿童数据为对照常模。报告中的数据包含报告分值以及百分位分值。报告分值是对观察者反馈的测量题目进行的计算并进行数据转化而得。百分位分值是通过与常模进行对照而得。本报告的常模采用的是相同年龄段的$child_gender$童群体。</div>
+        <div id="content" align="justify">本报告基于$child_name$的$user_relation$$user_name$提交的行为观察反馈（近2个月内的）而形成。</div>
+        <div id="content" align="justify">SEL社会技能评估工具，建议每半年使用一次，以持续性了解儿童在社会技能方面的发展状况。</div>
+        <div id="content" align="justify">最后，阅读本报告前，需要特别提醒的是，本报告结果基于观察者针对测评中的题目反馈而形成，深入理解需要与儿童及与儿童家长、教师、监护者等进行多维度进一步探讨。</div>
+        <div id="headline_1">6 关于SEL</div>
+        <div id="content" align="justify">SEL（Social and Emotional Learning）的概念是由美国非赢利组织CASEL（The Collaborative for Academic, Social, and Emotional Learning）于1994年正式提出的。SEL指的是，儿童和成人通过学习知识、态度与技能，来理解和管理情感，设定和实现积极的目标，感受和表达对他人的同理心，建立和维护积极的关系，并做出负责任的决策（CASEL, 2017）。SEL认为，最好的学习发生在相互支持的关系中，这种关系让学习变得富有挑战、充满参与感和意义（Jones, Bouffard, & Weissbourd，2013）。</div>
+        <div id="content" align="justify">2002年，联合国教科文组织在全球140个国家实施推广SEL，由美国开始，还包括欧洲、南美洲、北美洲、东南亚地区、大洋洲等。</div>
+        <div id="content" align="justify">SEL社会情感能力，就像大树的根一样，给予孩子持续一生的成长动力。</div>
+        <div id="content_noindent" align="center"><img src=":/selreport/images/image02.png" width="425" height="546" ></div>
+        <div id="content" align="justify">SEL社会情感能力包含五种核心技能来启发儿童的心灵，帮助儿童内在健康成长，从而有能力驾驭自己的人生。这五种核心技能包括：</div>
+        <div id="content_noindent" align="center"><img src=":/selreport/images/image03.png" width="487" height="260" ></div>
+        <div id="content_noindent" align="justify"><ol style="font-weight:bold;"><li>自我意识（self-awareness）：<span style="font-weight:normal;">能够准确地识别自己的情绪和想法，并能了解自己的情绪和想法是如何对自己的行为产生影响的。</span></li><li>自我管理（self-management）：<span style="font-weight:normal;">能够在不同的情境下，有效的调节自己的情绪、想法和行为。</span></li><li>负责任的决策（Responsible decision-making）：<span style="font-weight:normal;">能够在综合考虑道德标准、安全性、社会规则、尊重他人以及不同行为造成的可能的结果的情况下做出建设性选择和决策。</span></li><li>关系技能（Relationship skills）：<span style="font-weight:normal;">能够与不同的个人和团体建立并保持健康有益的关系。</span></li><li>社会意识（Social awareness）：<span style="font-weight:normal;">能够在不同的背景和文化中，了解他人的视角，并理解他人。</span></li></ol></div>
+        <div id="content" align="justify">SEL社会情感能力，对于儿童全面健康发展有着极其重要的意义；欧美多年的研究及实践表明，儿童在SEL方面的发展和提升，对于儿童的性格塑造、品格培养、学业精进、能力提升都至关重要；尽早进行科学评测，及时并有针对性的培养和干预，将让孩子受益终生！</div>
+        <div id="headline_1">7 关于薄荷叶教育&trade;</div>
+        <div id="content" align="justify">薄荷叶教育——中国首家SEL专业测评机构，关注儿童内在成长，致力于社会情感能力专业评测，帮助儿童开启自我发现的成长之旅。</div>
+        <div id="content" align="justify">薄荷叶测评，由哥伦比亚大学与北京大学教育研究者们基于三十余年SEL研究成果以及在全球许多国家实施应用结果联合开发，采用基于常模的动态评测方法，客观评估儿童和青少年的SEL能力发展水平和问题行为风险等指标，帮助父母了解孩子社会情感方面的发展状况及在群体中的发展动态。</div>
+        <br/>
+        <div id="content" align="center">希望我们的孩子内心丰盈、生动而独特！</div>
+        <div id="content" align="center">让我们通过社会情感学习，与孩子一起，探索更好的自己 。</div>
+        <div id="content" align="center"><span style="font-weight:bold; color:#70ad47;">明亮之心，点亮生命！</span></div>
+        <div id="content" align="center"><span style="font-weight:bold; color:#70ad47;">Bright Heart, Lighten Life!</span></div>
+        <div id="content_noindent" align="center"><img src=":/selreport/images/logo.png" width="235" height="125" ></div>
+        <div id="headline_1">8 本报告主要参考资料</div>
+        <div id="content_noindent" align="justify"><ul><li><span style="font-weight:bold;">Handbook of Social and Emotional Learning Research and Practice</span>，Edited by Joseph A. Durlak, Celene E. Domitrovich, Roger P. Weissberg, and Thomas P. Gullotta, 2015</li><li>The Collaborative for Academic, Social and Emotional Learning <span style="font-weight:bold;">(CASEL)</span>, http://www.casel.org</li><li>Social and Emotional Aspects of Learning<span style="font-weight:bold;">(SEAL)</span>: Improving behaviour, improving learning. http://www.education.gov.uk</li><li>Social and Emotional Well-being <span style="font-weight:bold;">(SEWB)</span>, http://www.sewbmh.org.au/</li><li><span style="font-weight:bold;">Diagnostic and Statistical Manual Disorders</span>，5th ed, American Psychiatric Association (APA) 2013</li><li><span style="font-weight:bold;">儿童心理学</span>，（英）H. Rudolph Schaffer（H. 鲁道夫·谢弗）著，王莉 译</li><li><span style="font-weight:bold;">儿童的人格形成及其培养</span>，（奥地利）Alfred Adler（阿尔弗雷德·阿德勒）著，韦启昌 译</li></ul></div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div id="content" align="center">更多学习，请登陆<span style="font-weight:bold; font-size:13pt; color:#70ad47">薄荷叶SEL教育</span>公众号</div>
+        <div id="content_noindent" align="center"><img src=":/selreport/images/showqrcode.png" width="150" height="150" ></div>
+    </body>
+</html>
+

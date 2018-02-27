@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <meta name="qrichtext" content="1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>QTextEdit Demonstration</title>
+        <style type="text/css">
+            #title{
+                margin-bottom:20px;
+                font-size:28px;
+                font-weight:bold;
+                color:#70ad47;
+                text-align:right;
+                vertical-align:middle;
+            }
+            #title_1{
+                margin-bottom:40px;
+                font-size:18px;
+                font-weight:bold;
+                color:#70ad47;
+                text-align:right;
+                vertical-align:middle;
+            }
+            #category{
+                margin-bottom:40px;
+                font-size:13px;
+                font-weight:bold;
+                text-align:center;
+                page-break-before:always;
+            }
+            #headline_1{
+                margin-bottom:20px;
+                font-size:14px;
+                font-weight:bold;
+                color:#ed7d31;
+                page-break-before:always;
+            }
+            #headline_2{
+                margin-top:20px;
+                margin-bottom:20px;
+                font-size:13px;
+                font-weight:bold;
+                color:#ed7d31;
+            }
+            #headline_3{
+                margin-top:20px;
+                margin-bottom:20px;
+                font-size:13px;
+                font-weight:bold;
+            }
+            #content{
+                margin-top:12px;
+                margin-bottom:12px;
+                font-size:11pt;
+                text-align:justify;
+                text-indent:22px;
+                line-height:30px;
+            }
+            #content_img_rfloat{
+                margin-top:12px;
+                margin-bottom:12px;
+                font-size:11pt;
+                text-align:justify;
+                text-indent:20px;
+                line-height:30px;
+            }
+            #content_img_rfloat img{
+                float:right;
+                margin-top:12px;
+                margin-bottom:12px;
+                margin-left:12px;
+            }
+            #content_noindent{
+                margin-top:12px;
+                margin-bottom:12px;
+                font-size:11pt;
+                text-align:justify;
+                line-height:30px;
+            }
+            #content_noindent li{
+                margin-bottom:6px
+            }
+        </style>
+    </head>
+    <body>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div id="title" align="right">SEL行为和情感问题风险筛查报告</div>
+        <div id="title_1" align="right">— $version_age$</div>
+        <div id="content" align="right">$child_name$</div>
+        <div id="content" align="right">报告生成日期：$report_time$</div>
+        <div id="content" align="right">观察记录填写日期：$evaluation_time$</div>
+        <div id="content" align="right">报告ID：$report_id$</div>
+        <div id="category">报告目录</div>
+        <div id="content_noindent">1    报告基本信息 ........................................................................................................... 3</div>
+        <div id="content_noindent">2    报告结果概览 ........................................................................................................... 4</div>
+        <div id="content_noindent">3    详细报告  ................................................................................................................. 5</div>
+        <div id="content_noindent">    3.1    行为和情感问题总体风险水平详细报告 ........................................................... 5</div>
+        <div id="content_noindent">    3.2    行为和情感问题细分子维度风险水平详细报告 ................................................ 7</div>
+        <div id="content_noindent">4    专家建议  ................................................................................................................. 8</div>
+        <div id="content_noindent">5    报告说明  ................................................................................................................. 9</div>
+        <div id="content_noindent">6    关于SEL  ................................................................................................................. 11</div>
+        <div id="content_noindent">7    关于薄荷叶教育&trade; .................................................................................................. 13</div>
+        <div id="content_noindent">8    本报告主要参考资料 .............................................................................................. 14</div>
+        <div id="headline_1">1 报告基本信息</div>
+        <div id="content_noindent" align="center"><img src="userdata://basic_info.png" width="550" height="327" ></div>
+        <div id="headline_1">2 报告结果概览</div>
+        <div id="content" align="justify">$child_name$的的行为和情感问题的风险提示结论为<span style="font-weight:bold; color:$total_level_color$;">$total_level$</span>。<span style="font-size:9px;">（注：采用Diagnostic and Statistical Manual Disorders, 5th ed, 2013中的标准）</span></div>
+        $total_level_conclusion$
+        <div id="headline_1">3 详细报告</div>
+        <div id="headline_2">3.1 行为和情感问题总体风险水平详细报告</div>
+        <div id="content" align="justify">与该年龄段的整体儿童群体相比，$child_name$的行为和情感问题的风险分数为：$total_tscore_combined$，其行为和情感问题的风险分数区间如下图所示，这意味着，$child_name$的行为和情感问题的风险分数处于$total_tscore_90lower_combined$至$total_tscore_90upper_combined$的可能性为90%。
+        <div id="content_noindent" align="center"><img src="userdata://tscore_range_combined.png" width="550" height="105" ></div>
+        <div id="content" align="justify"><span style="font-size:9px;">（注：任何测量都会存在一定的误差，也就是说，通过当前工具测得的行为和情感问题的风险分值与儿童真实的状况可能存在一定的偏差。因此我们在提供行为和情感问题的风险得分（黑点位置）的基础上还分别提供准确度为90%分数区间。这意味着，该儿童真实的行为和情感问题的风险水平会有90%可能性落于灰色区间范围内。）</span></div>
+        <div id="content" align="justify">与该年龄段的$child_gender$童群体相比，$child_name$的行为和情感问题的风险分数为：$total_tscore_gender$，风险分数区间如下图所示，这意味着，$child_name$的行为和情感问题的风险分数处于$total_tscore_90lower_gender$至$total_tscore_90upper_gender$的可能性为90%。
+        <div id="content_noindent" align="center"><img src="userdata://tscore_range_gender.png" width="550" height="105" ></div>
+        <div id="content" style="page-break-before:always;" align="justify">与该年龄段的整体儿童群体相比，$child_name$的行为与情感风险水平高于$total_percent_combined$%的儿童。</div>
+        <div id="content_noindent" align="center"><img src="userdata://percent_combined.png" width="230" height="230" ></div>
+        <div id="content" align="justify">与该年龄段的$child_gender$童群体相比，$child_name$的行为与情感风险水平高于$total_percent_gender$%的儿童。 </div>
+        <div id="content_noindent" align="center"><img src="userdata://percent_gender.png" width="230" height="230" ></div>
+        <div id="headline_2" style="page-break-before:always;">3.2 行为和情感问题细分子维度风险水平详细报告</div>
+        <div id="content" align="justify">$child_name$在行为和情感问题的细分子维度指标上，各分项指标的风险水平结果如下。</div>
+        <div id="content_noindent" align="center"><img src="userdata://subdimen_table.png" width="550" height="248" ></div>
+        <div id="headline_1">4 专家建议</div>
+        <div id="content" align="justify">$child_name$在社交情绪问题行为方面，整体状况为$total_level_conclusion1$</div>
+        $total_level_conclusion2$
+        <div id="content" align="justify">尽早及时的预防和干预，可以帮助儿童在未来的社交、情感，以及学业成绩方面的负面影响及早消除或者得到改善。相关干预指南，请参见“薄荷叶教育-问题行为干预课程系列”。</div>
+        <div id="headline_1">5 报告说明</div>
+        <div id="content" align="justify">过去几十年的研究表明，儿童行为和情感问题以及其学业成绩表现之间有很强的相关性 (Gutman, Sameroff, & Cole, 2003; Jimerson, Egeland, & Teo, 1999; McEvoy & Welker, 2000)。<span style="font-weight:bold; color:#ed7d31;">除了智力因素以外，焦虑和抑郁已经被证明是影响学业成就的重要障碍</span>，研究还特别指出，<span style="font-weight:bold; color:#ed7d31;">这些问题往往始于儿童早期</span> (Rapport, Denney, Chung, & Hustace, 2001)。</div>
+        <div id="content" align="justify">2013年，美国疾病控制与预防中心的份儿童心理健康监测报告指出：</div>
+        <div id="content" align="justify"><span style="font-weight:bold; color:#ed7d31;"><ul><li>  在每个年龄段中，每5个儿童中，就会有1个儿童有心理健康障碍</li><li>  自杀是12-17岁儿童死亡的第二大原因</li><li>  随着年龄的增长，儿童心理健康障碍的患病率随之增加。</li></ul></span></div>
+        <div id="content" align="justify">对儿童的行为和情感方面的评估，是能够帮助儿童未来成功的有效方法。遗憾的是，<span style="font-weight:bold; color:#ed7d31;">许多孩子的行为和情感问题常常无法识别</span>。相比于针对视力、听力及学业成绩方面的筛查，学校及家庭在社交及情绪方面问题的筛查很少进行。儿童的行为和情感方面的问题经常会被忽视。<span style="font-weight:bold; color:#ed7d31;">如果能够及早发现一些潜在的问题，可以尽早进行及时的预防和干预</span>，从而将儿童在未来的社交和情感，以及学业成绩方面的负面影响及早消除或者得到改善。</div>
+        <div id="content" align="justify">本报告旨在快速识别儿童的潜在行为或情感方面的问题，筛查儿童在行为和情感方面的问题风险水平，从而确定是否需要进一步全面诊断和评估，或者进行相关问题行为的干预。</div>
+        <div id="content" align="justify">本报告中的行为及情感问题量表以美国知名国际性组织CASEL的SEL框架为基础，采用美国研究并实践了三十余年的SEL测评量表，以美国及中国近万名儿童数据为对照常模。报告中的数据包含标准分以及百分位分值。标准分是对观察者反馈的测量题目计算并进行数据转化而得。百分位分值是通过与常模进行对照而得。</div>
+        <div id="content" align="justify">本报告的结果是基于$child_name$的$user_relation$$user_name$提交的行为观察反馈（近2个月内的）而形成。报告的常模采用的是相同年龄段的$child_gender$童群体。</div>
+        <div id="content" align="justify">薄荷叶SEL行为及情感问题风险筛查工具，建议每半年使用一次，以持续性了解儿童在行为及情绪问题方面的改善状况。最后，阅读本报告前，需要特别提醒的是，本报告结果基于观察者针对测评中的题目反馈而形成，深入理解需要与儿童及与儿童家长、教师、监护者等进行多维度进一步探讨。</div>
+        <div id="headline_1">6 关于SEL</div>
+        <div id="content" align="justify">SEL（Social and Emotional Learning）的概念是由美国非赢利组织CASEL（The Collaborative for Academic, Social, and Emotional Learning）于1994年正式提出的。SEL指的是，儿童和成人通过学习知识、态度与技能，来理解和管理情感，设定和实现积极的目标，感受和表达对他人的同理心，建立和维护积极的关系，并做出负责任的决策（CASEL, 2017）。SEL认为，最好的学习发生在相互支持的关系中，这种关系让学习变得富有挑战、充满参与感和意义（Jones, Bouffard, & Weissbourd，2013）。</div>
+        <div id="content" align="justify">2002年，联合国教科文组织在全球140个国家实施推广SEL，由美国开始，还包括欧洲、南美洲、北美洲、东南亚地区、大洋洲等。</div>
+        <div id="content" align="justify">SEL社会情感能力，就像大树的根一样，给予孩子持续一生的成长动力。</div>
+        <div id="content_noindent" align="center"><img src=":/selreport/images/image02.png" width="425" height="546" ></div>
+        <div id="content" align="justify">SEL社会情感能力包含五种核心技能来启发儿童的心灵，帮助儿童内在健康成长，从而有能力驾驭自己的人生。这五种核心技能包括：</div>
+        <div id="content_noindent" align="center"><img src=":/selreport/images/image03.png" width="487" height="260" ></div>
+        <div id="content_noindent" align="justify"><ol style="font-weight:bold;"><li>自我意识（self-awareness）：<span style="font-weight:normal;">能够准确地识别自己的情绪和想法，并能了解自己的情绪和想法是如何对自己的行为产生影响的。</span></li><li>自我管理（self-management）：<span style="font-weight:normal;">能够在不同的情境下，有效的调节自己的情绪、想法和行为。</span></li><li>负责任的决策（Responsible decision-making）：<span style="font-weight:normal;">能够在综合考虑道德标准、安全性、社会规则、尊重他人以及不同行为造成的可能的结果的情况下做出建设性选择和决策。</span></li><li>关系技能（Relationship skills）：<span style="font-weight:normal;">能够与不同的个人和团体建立并保持健康有益的关系。</span></li><li>社会意识（Social awareness）：<span style="font-weight:normal;">能够在不同的背景和文化中，了解他人的视角，并理解他人。</span></li></ol></div>
+        <div id="content" align="justify">SEL社会情感能力，对于儿童全面健康发展有着极其重要的意义；欧美多年的研究及实践表明，儿童在SEL方面的发展和提升，对于儿童的性格塑造、品格培养、学业精进、能力提升都至关重要；尽早进行科学评测，及时并有针对性的培养和干预，将让孩子受益终生！</div>
+        <div id="headline_1">7 关于薄荷叶教育&trade;</div>
+        <div id="content" align="justify">薄荷叶教育——中国首家SEL专业测评机构，关注儿童内在成长，致力于社会情感能力专业评测，帮助儿童开启自我发现的成长之旅。</div>
+        <div id="content" align="justify">薄荷叶测评，由哥伦比亚大学与北京大学教育研究者们基于三十余年SEL研究成果以及在全球许多国家实施应用结果联合开发，采用基于常模的动态评测方法，客观评估儿童和青少年的SEL能力发展水平和问题行为风险等指标，帮助父母了解孩子社会情感方面的发展状况及在群体中的发展动态。</div>
+        <br/>
+        <div id="content" align="center">希望我们的孩子内心丰盈、生动而独特！</div>
+        <div id="content" align="center">让我们通过社会情感学习，与孩子一起，探索更好的自己 。</div>
+        <div id="content" align="center"><span style="font-weight:bold; color:#70ad47;">明亮之心，点亮生命！</span></div>
+        <div id="content" align="center"><span style="font-weight:bold; color:#70ad47;">Bright Heart, Lighten Life!</span></div>
+        <div id="content_noindent" align="center"><img src=":/selreport/images/logo.png" width="235" height="125" ></div>
+        <div id="headline_1">8 本报告主要参考资料</div>
+        <div id="content_noindent" align="justify"><ul><li><span style="font-weight:bold;">Handbook of Social and Emotional Learning Research and Practice</span>，Edited by Joseph A. Durlak, Celene E. Domitrovich, Roger P. Weissberg, and Thomas P. Gullotta, 2015</li><li>The Collaborative for Academic, Social and Emotional Learning <span style="font-weight:bold;">(CASEL)</span>, http://www.casel.org</li><li>Social and Emotional Aspects of Learning<span style="font-weight:bold;">(SEAL)</span>: Improving behaviour, improving learning. http://www.education.gov.uk</li><li>Social and Emotional Well-being <span style="font-weight:bold;">(SEWB)</span>, http://www.sewbmh.org.au/</li><li><span style="font-weight:bold;">Diagnostic and Statistical Manual Disorders</span>，5th ed, American Psychiatric Association (APA) 2013</li><li><span style="font-weight:bold;">儿童心理学</span>，（英）H. Rudolph Schaffer（H. 鲁道夫·谢弗）著，王莉 译</li><li><span style="font-weight:bold;">儿童的人格形成及其培养</span>，（奥地利）Alfred Adler（阿尔弗雷德·阿德勒）著，韦启昌 译</li></ul></div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div id="content" align="center">更多学习，请登陆<span style="font-weight:bold; font-size:13pt; color:#70ad47">薄荷叶SEL教育</span>公众号</div>
+        <div id="content_noindent" align="center"><img src=":/selreport/images/showqrcode.png" width="150" height="150" ></div>
+    </body>
+</html>
+
