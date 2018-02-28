@@ -1170,48 +1170,63 @@ bool ReportPrq::BuildReportData()
     QString strSuggestion1BothAE = m_pSettings->value("prq_report_suggestion1/BothAE").toString();
     QString strSuggestion1BothCE = m_pSettings->value("prq_report_suggestion1/BothCE").toString();
     QString strSuggestion1BothACE = m_pSettings->value("prq_report_suggestion1/BothACE").toString();
+    QString strSuggestion1RFCaution = m_pSettings->value("prq_report_suggestion1/RFCaution").toString();
+    QString strSuggestion1RFExtremeCaution = m_pSettings->value("prq_report_suggestion1/RFExtremeCaution").toString();
+
+    const QString strRelationalFrustration =  ScaleNormsPrq::SubDimensionTypeToName(ScaleNormsPrq::sdtRelationalFrustration);
+    QStringList lstTempAcceptableSubdimens = lstAcceptableSubdimens;
+    lstTempAcceptableSubdimens.removeAll(strRelationalFrustration);
+    QStringList lstTempCautionSubdimens = lstCautionSubdimens;
+    lstTempCautionSubdimens.removeAll(strRelationalFrustration);
+    QStringList lstTempExtremeCautionSubdimens = lstExtremeCautionSubdimens;
+    lstTempExtremeCautionSubdimens.removeAll(strRelationalFrustration);
 
     QString strReportSuggestion1;
     // OnlyA
-    if(!lstAcceptableSubdimens.isEmpty() && lstCautionSubdimens.isEmpty() && lstExtremeCautionSubdimens.isEmpty())
+    if(!lstTempAcceptableSubdimens.isEmpty() && lstTempCautionSubdimens.isEmpty() && lstTempExtremeCautionSubdimens.isEmpty())
     {
-        strReportSuggestion1 = strSuggestion1OnlyA.replace(QLatin1String("$list_a$"), lstAcceptableSubdimens.join(QLatin1Char(',')));
+        strReportSuggestion1 = strSuggestion1OnlyA.replace(QLatin1String("$list_a$"), lstTempAcceptableSubdimens.join(QLatin1Char(',')));
     }
     // OnlyC
-    else if(lstAcceptableSubdimens.isEmpty() && !lstCautionSubdimens.isEmpty() && lstExtremeCautionSubdimens.isEmpty())
+    else if(lstTempAcceptableSubdimens.isEmpty() && !lstTempCautionSubdimens.isEmpty() && lstTempExtremeCautionSubdimens.isEmpty())
     {
-        strReportSuggestion1 = strSuggestion1OnlyC.replace(QLatin1String("$list_c$"), lstCautionSubdimens.join(QLatin1Char(',')));
+        strReportSuggestion1 = strSuggestion1OnlyC.replace(QLatin1String("$list_c$"), lstTempCautionSubdimens.join(QLatin1Char(',')));
     }
     // OnlyE
-    else if(lstAcceptableSubdimens.isEmpty() && lstCautionSubdimens.isEmpty() && !lstExtremeCautionSubdimens.isEmpty())
+    else if(lstTempAcceptableSubdimens.isEmpty() && lstTempCautionSubdimens.isEmpty() && !lstTempExtremeCautionSubdimens.isEmpty())
     {
-        strReportSuggestion1 = strSuggestion1OnlyE.replace(QLatin1String("$list_e$"), lstExtremeCautionSubdimens.join(QLatin1Char(',')));
+        strReportSuggestion1 = strSuggestion1OnlyE.replace(QLatin1String("$list_e$"), lstTempExtremeCautionSubdimens.join(QLatin1Char(',')));
     }
     // BothAC
-    else if(!lstAcceptableSubdimens.isEmpty() && !lstCautionSubdimens.isEmpty() && lstExtremeCautionSubdimens.isEmpty())
+    else if(!lstTempAcceptableSubdimens.isEmpty() && !lstTempCautionSubdimens.isEmpty() && lstTempExtremeCautionSubdimens.isEmpty())
     {
-        strReportSuggestion1 = strSuggestion1BothAC.replace(QLatin1String("$list_a$"), lstAcceptableSubdimens.join(QLatin1Char(',')));
-        strReportSuggestion1 = strReportSuggestion1.replace(QLatin1String("$list_c$"), lstCautionSubdimens.join(QLatin1Char(',')));
+        strReportSuggestion1 = strSuggestion1BothAC.replace(QLatin1String("$list_a$"), lstTempAcceptableSubdimens.join(QLatin1Char(',')));
+        strReportSuggestion1 = strReportSuggestion1.replace(QLatin1String("$list_c$"), lstTempCautionSubdimens.join(QLatin1Char(',')));
     }
     // BothAE
-    else if(!lstAcceptableSubdimens.isEmpty() && lstCautionSubdimens.isEmpty() && !lstExtremeCautionSubdimens.isEmpty())
+    else if(!lstTempAcceptableSubdimens.isEmpty() && lstTempCautionSubdimens.isEmpty() && !lstTempExtremeCautionSubdimens.isEmpty())
     {
-        strReportSuggestion1 = strSuggestion1BothAE.replace(QLatin1String("$list_a$"), lstAcceptableSubdimens.join(QLatin1Char(',')));
-        strReportSuggestion1 = strReportSuggestion1.replace(QLatin1String("$list_e$"), lstExtremeCautionSubdimens.join(QLatin1Char(',')));
+        strReportSuggestion1 = strSuggestion1BothAE.replace(QLatin1String("$list_a$"), lstTempAcceptableSubdimens.join(QLatin1Char(',')));
+        strReportSuggestion1 = strReportSuggestion1.replace(QLatin1String("$list_e$"), lstTempExtremeCautionSubdimens.join(QLatin1Char(',')));
     }
     // BothCE
-    else if(lstAcceptableSubdimens.isEmpty() && !lstCautionSubdimens.isEmpty() && !lstExtremeCautionSubdimens.isEmpty())
+    else if(lstTempAcceptableSubdimens.isEmpty() && !lstTempCautionSubdimens.isEmpty() && !lstTempExtremeCautionSubdimens.isEmpty())
     {
-        strReportSuggestion1 = strSuggestion1BothCE.replace(QLatin1String("$list_c$"), lstCautionSubdimens.join(QLatin1Char(',')));
-        strReportSuggestion1 = strReportSuggestion1.replace(QLatin1String("$list_e$"), lstExtremeCautionSubdimens.join(QLatin1Char(',')));
+        strReportSuggestion1 = strSuggestion1BothCE.replace(QLatin1String("$list_c$"), lstTempCautionSubdimens.join(QLatin1Char(',')));
+        strReportSuggestion1 = strReportSuggestion1.replace(QLatin1String("$list_e$"), lstTempExtremeCautionSubdimens.join(QLatin1Char(',')));
     }
     // BothACE
-    else if(!lstAcceptableSubdimens.isEmpty() && !lstCautionSubdimens.isEmpty() && !lstExtremeCautionSubdimens.isEmpty())
+    else if(!lstTempAcceptableSubdimens.isEmpty() && !lstTempCautionSubdimens.isEmpty() && !lstTempExtremeCautionSubdimens.isEmpty())
     {
-        strReportSuggestion1 = strSuggestion1BothACE.replace(QLatin1String("$list_a$"), lstAcceptableSubdimens.join(QLatin1Char(',')));
-        strReportSuggestion1 = strReportSuggestion1.replace(QLatin1String("$list_c$"), lstCautionSubdimens.join(QLatin1Char(',')));
-        strReportSuggestion1 = strReportSuggestion1.replace(QLatin1String("$list_e$"), lstExtremeCautionSubdimens.join(QLatin1Char(',')));
+        strReportSuggestion1 = strSuggestion1BothACE.replace(QLatin1String("$list_a$"), lstTempAcceptableSubdimens.join(QLatin1Char(',')));
+        strReportSuggestion1 = strReportSuggestion1.replace(QLatin1String("$list_c$"), lstTempCautionSubdimens.join(QLatin1Char(',')));
+        strReportSuggestion1 = strReportSuggestion1.replace(QLatin1String("$list_e$"), lstTempExtremeCautionSubdimens.join(QLatin1Char(',')));
     }
+
+    if(m_mapSubDimensionTypeToLevelType.value(ScaleNormsPrq::sdtRelationalFrustration) == ScaleNormsPrq::ltCaution)
+        strReportSuggestion1 = strReportSuggestion1 + strSuggestion1RFCaution;
+    else if(m_mapSubDimensionTypeToLevelType.value(ScaleNormsPrq::sdtRelationalFrustration) == ScaleNormsPrq::ltExtremeCaution)
+        strReportSuggestion1 = strReportSuggestion1 + strSuggestion1RFExtremeCaution;
 
     QString strReportSuggestion2Data;
     foreach(int iQuestionIndex, lstSuggestionQuestionIndexs)
@@ -1236,6 +1251,8 @@ bool ReportPrq::BuildReportData()
     m_mapVariableData.insert(g_strSubdimenTableHeight, (m_bPP ? "620" : "820"));
     m_mapVariableData.insert(g_strReportSuggestion1, strReportSuggestion1);
     m_mapVariableData.insert(g_strReportSuggestion2, strReportSuggestion2);
+    m_mapVariableData.insert(g_strRelationalFrustrationPercent, QString::number(m_mapSubDimensionTypeToPercent.value(ScaleNormsPrq::sdtRelationalFrustration)));
+    m_mapVariableData.insert(g_strAttachmentPercent, QString::number(m_mapSubDimensionTypeToPercent.value(ScaleNormsPrq::sdtAttachment)));
 
     DrawImageForBasicInfo();
     DrawImageForSLevel();

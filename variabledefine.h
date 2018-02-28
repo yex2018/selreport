@@ -63,5 +63,7 @@ const QString g_strExtremeCautionSubdimenList   = QLatin1String("$extremecaution
 const QString g_strSubdimenTableHeight          = QLatin1String("$subdimen_table_height$");
 const QString g_strReportSuggestion1            = QLatin1String("$report_suggestion1$");
 const QString g_strReportSuggestion2            = QLatin1String("$report_suggestion2$");
+const QString g_strRelationalFrustrationPercent = QLatin1String("$relationalfrustration_percent$");
+const QString g_strAttachmentPercent            = QLatin1String("$attachment_percent$");
 
 #endif // VARIABLEDEFINE_H
